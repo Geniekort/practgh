@@ -21,7 +21,7 @@ public class Painter extends Functions{
 		
 	}
 	
-	public void initialize(){//hoera
+	public void initialize(){//hoerad
 		commands = new ArrayList<String>();
 	}
 	
