@@ -30,9 +30,9 @@ public class Functions  {
 				for(int j = 0; j < X; j++){
 				
 					if(temp.charAt(j) == '#') {
-						output[i][j][0] = 1;
+						output[j][i][0] = 1;
 					} else {
-						output[i][j][0] = 0;
+						output[j][i][0] = 0;
 					}
 				}
 			}
