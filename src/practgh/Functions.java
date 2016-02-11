@@ -46,4 +46,7 @@ public class Functions  {
 		return output;
 	}
 
+	 public void paintLine(int x, int y, int xeen, int yeen){
+		 
+	 }
 }
