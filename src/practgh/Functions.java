@@ -16,7 +16,7 @@ public class Functions  {
 		
 		
 		try{ 
-			Scanner in = new Scanner(new FileReader(""));
+			Scanner in = new Scanner(new FileReader("./src/inputfail.txt"));
 		
 			X = in.nextInt();
 			Y = in.nextInt();
