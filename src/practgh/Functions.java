@@ -10,7 +10,7 @@ public class Functions  {
 	int[][][] inputgrid; // [X][Y][0 = should be drawn, 1 = drawn, ]
 	int X,Y;
 	
-	 public int[][][] runsolve(){
+	 public int[][][] getInput(){
 		 
 		int[][][] output;
 		
@@ -47,6 +47,6 @@ public class Functions  {
 	}
 
 	 public void paintLine(int x, int y, int xeen, int yeen){
-		 //t
+		 //t1
 	 }
 }
