@@ -21,6 +21,7 @@ public class Functions  {
 			X = in.nextInt();
 			Y = in.nextInt();
 			output = new int[X][Y][5];
+			in.nextLine();
 			
 			String temp = new String();
 			
@@ -47,6 +48,11 @@ public class Functions  {
 	}
 
 	 public void paintLine(int x, int y, int xeen, int yeen){
-		 //t1
+		 for(int i = x; i < xeen; i++){
+			 inputgrid[x][xeen][1] = 1;
+		 }
+		 for(int j = y; j < yeen; j++){
+			 inputgrid[y][yeen][1] = 1;
+		 }
 	 }
 }
