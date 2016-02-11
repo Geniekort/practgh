@@ -7,7 +7,7 @@ public class Painter extends Functions{
 	
 
 
-	int[][][] inputgrid; // [X][Y][0 = should be drawn, 1 = drawn, ]
+	
 	ArrayList<String> commands;
 	
 	public void run(){

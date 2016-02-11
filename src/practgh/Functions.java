@@ -1,26 +1,49 @@
 package practgh;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.Scanner;
+
 
 public class Functions  {
 
-	public int X,Y;
+	int[][][] inputgrid; // [X][Y][0 = should be drawn, 1 = drawn, ]
+	int X,Y;
 	
-	static int[][][]run(){
+	 public int[][][] runsolve(){
+		 
 		int[][][] output;
-		Scanner in = new Scanner(new Filereader());
-		int x = in.nextInt();
-		int y = in.nextInt();
-		
-		String[] X = new String[x];
-		
-		for(int i = 0;  i < x; i++){
-			X[i] = in.next();
-		}
-		in.close();
 		
 		
+		try{ 
+			Scanner in = new Scanner(new FileReader(""));
+		
+			X = in.nextInt();
+			Y = in.nextInt();
+			output = new int[X][Y][5];
 			
+			String temp = new String();
+			
+			for(int i = 0;  i < Y; i++){
+				temp = in.nextLine();
+				for(int j = 0; j < X; j++){
+				
+					if(temp.charAt(j) == '#') {
+						output[i][j][0] = 1;
+					} else {
+						output[i][j][0] = 0;
+					}
+				}
+			}
+			
+			
+			in.close();
+				
+		}catch(FileNotFoundException e) { 
+            System.out.println("Could not open file due to"); System.out.println(e); 
+            return null;
 		}
+		return output;
 	}
 
+}
