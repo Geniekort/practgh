@@ -2,6 +2,7 @@ package practgh;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -53,6 +54,13 @@ public class Functions  {
 			 for(int j = y; j <= yeen; j++){
 				 inputgrid[i][j][1] = 1;
 			 }
+		 }
+	 }
+	 
+	 public void commandPoeh(ArrayList<String> poeh){
+		 System.out.println(poeh.size());
+		 for(int i = 0; i < poeh.size(); i++){
+			 System.out.println(poeh.get(i));
 		 }
 	 }
 }
