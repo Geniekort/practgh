@@ -16,7 +16,7 @@ public class Functions  {
 		
 		
 		try{ 
-			Scanner in = new Scanner(new FileReader(""));
+			Scanner in = new Scanner(new FileReader("./src/inputfail.txt"));
 		
 			X = in.nextInt();
 			Y = in.nextInt();
@@ -48,11 +48,11 @@ public class Functions  {
 	}
 
 	 public void paintLine(int x, int y, int xeen, int yeen){
-		 for(int i = x; i < xeen; i++){
-			 inputgrid[x][xeen][1] = 1;
-		 }
-		 for(int j = y; j < yeen; j++){
-			 inputgrid[y][yeen][1] = 1;
+		 for(int i = x; i <= xeen; i++){
+			  
+			 for(int j = y; j <= yeen; j++){
+				 inputgrid[i][j][1] = 1;
+			 }
 		 }
 	 }
 }
