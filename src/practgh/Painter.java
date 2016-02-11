@@ -28,7 +28,7 @@ public class Painter extends Functions {
 				}
 			}
 		}
-
+		return;
 	}
 
 	public void solvePoint(int x, int y) {
@@ -38,12 +38,12 @@ public class Painter extends Functions {
 
 		String command;
 
-		while (notdone(inputgrid[x + xr][y]) && x + xr < X) {
+		while (x + xr < X && notdone(inputgrid[x + xr][y]) ) {
 			rightLength++;
 			xr++;
 		}
 
-		while (notdone(inputgrid[x][y + yd]) && y + yd < Y) {
+		while ( y + yd < Y && notdone(inputgrid[x][y + yd]) ) {
 			downLength++;
 			yd++;
 		}
@@ -55,6 +55,8 @@ public class Painter extends Functions {
 			command = "PAINT_LINE " + y + " " + x + " " + y + " " + x + rightLength;
 			paintLine(x, y, x + rightLength, y); /* TODO */
 		}
+		
+		commands.add(command);
 	}
 
 	public boolean notdone(int[] cell) {
